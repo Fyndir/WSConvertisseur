@@ -1,13 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="Main2" />
+    <RootPropertyPathName Name="DeviseToEuro" />
     <RootPropertyPathName Name="Nom" />
-    <RootPropertyPathName Name="MontantDevise" />
-    <RootPropertyPathName Name="BtnSetConversion" />
+    <RootPropertyPathName Name="MontantEuro" />
+    <RootPropertyPathName Name="BtnSetConversionDeviceToEuro" />
     <RootPropertyPathName Name="SelectedDevise" />
     <RootPropertyPathName Name="ComboBoxDevice" />
-    <RootPropertyPathName Name="MontantEuro" />
+    <RootPropertyPathName Name="MontantDevise" />
+    <RootPropertyPathName Name="Main2" />
+    <RootPropertyPathName Name="BtnSetConversionEuroToDevice" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -39,6 +41,7 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="FontWeight" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Text" />
@@ -57,7 +60,25 @@
       <RootProperty Name="Content" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Width" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Background" />
+      <RootEvent Name="Click" />
     </RootType>
-    <RootType FullName="ClientConvertisseurV2.View.MainPage" />
+    <RootType FullName="ClientConvertisseurV2.View.DeviseToEuro" />
+    <RootType FullName="ClientConvertisseurV2.View.EuroToDevise" />
+    <RootType FullName="Windows.UI.Xaml.Controls.SplitView">
+      <RootProperty Name="DisplayMode" />
+      <RootProperty Name="IsPaneOpen" />
+      <RootProperty Name="CompactPaneLength" />
+      <RootProperty Name="OpenPaneLength" />
+      <RootProperty Name="Pane" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="Orientation" />
+    </RootType>
+    <RootType FullName="ClientConvertisseurV2.View.RootPage" />
   </Roots.RootTypes>
 </Roots>

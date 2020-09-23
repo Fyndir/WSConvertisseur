@@ -16,12 +16,13 @@ namespace ClientConvertisseurV2.ViewModel
         static ViewModelLocator()
         {
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
-            SimpleIoc.Default.Register<MainViewModel2>();
+            SimpleIoc.Default.Register<ConvertionViewModel>();
         }
 
         /// <summary>
         /// Gets the Main property.
         /// </summary>
-        public MainViewModel2 Main2 => ServiceLocator.Current.GetInstance<MainViewModel2>();
+        public ConvertionViewModel Main2 => ServiceLocator.Current.GetInstance<ConvertionViewModel>();
+        public ConvertionViewModel DeviseToEuro => ServiceLocator.Current.GetInstance<ConvertionViewModel>();
     }
 }

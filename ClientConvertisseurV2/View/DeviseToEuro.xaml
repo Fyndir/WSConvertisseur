@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="ClientConvertisseurV2.View.DeviseToEuro"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ClientConvertisseurV2.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    DataContext="{Binding DeviseToEuro, Source={StaticResource Locator}}">
+
+    <RelativePanel>
+
+        <TextBlock Text="Convertiseur"  Name="TxtB1" FontSize="24" FontWeight="Bold" Margin="50" ></TextBlock>
+        <TextBlock Text="Montant en Devise" RelativePanel.Below="TxtB1" RelativePanel.AlignHorizontalCenterWithPanel="True" Name="TxtB2" Margin="10"></TextBlock>
+        <TextBox Text="{Binding MontantDevise, Mode=TwoWay}" x:Name="TbMontantInit" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="TxtB2" Width="240"/>
+
+        <TextBlock Text="devise" x:Name="TxtB3" RelativePanel.Below="TbMontantInit" RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="10"></TextBlock>
+        <ComboBox x:Name="CbDevise" RelativePanel.Below="TxtB3" RelativePanel.AlignHorizontalCenterWithPanel="True" Width="240" SelectedItem="{Binding SelectedDevise , Mode=TwoWay}" DisplayMemberPath="Nom" ItemsSource="{Binding ComboBoxDevice}" />
+
+        <Button Command="{Binding BtnSetConversionDeviceToEuro}" x:Name="BtConverssion" Content="Convertir" RelativePanel.Below="CbDevise" RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="10" Width="240" ></Button>
+
+        <TextBlock Text="Montant en Euro" x:Name="TxtB4"  RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="BtConverssion" Margin="10"></TextBlock>
+
+        <TextBox Text="{Binding MontantEuro, Mode=TwoWay}" IsEnabled="False" x:Name="TbMontantEnDevise" RelativePanel.Below="TxtB4" RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="10" Width="240"></TextBox>
+    </RelativePanel>
+</Page>

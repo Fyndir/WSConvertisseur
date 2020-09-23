@@ -20,11 +20,31 @@ namespace ClientConvertisseurV2.View
     /// <summary>
     /// Une page vide peut être utilisée seule ou constituer une page de destination au sein d'un frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class RootPage : Page
     {
-        public MainPage()
+        public RootPage(Frame frame)
         {
             this.InitializeComponent();
+           
+                this.InitializeComponent();
+                this.MySplitView.Content = frame;
+                (MySplitView.Content as Frame).Navigate(typeof(EuroToDevise));
+            
+        }
+
+        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
+        {
+            MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
+        }
+
+        private void MenuButton1_Click(object sender, RoutedEventArgs e)
+        {
+            (MySplitView.Content as Frame).Navigate(typeof(EuroToDevise));
+        }
+
+        private void MenuButton2_Click(object sender, RoutedEventArgs e)
+        {
+            (MySplitView.Content as Frame).Navigate(typeof(DeviseToEuro));
         }
     }
 }

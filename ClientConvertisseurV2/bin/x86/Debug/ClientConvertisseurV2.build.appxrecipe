@@ -91,8 +91,14 @@
     <AppxPackagedFile Include="C:\Users\Etudiant\Source\Repos\Fyndir\WSConvertisseur\ClientConvertisseurV2\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Etudiant\Source\Repos\Fyndir\WSConvertisseur\ClientConvertisseurV2\bin\x86\Debug\View\MainPage.xbf">
-      <PackagePath>View\MainPage.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Etudiant\Source\Repos\Fyndir\WSConvertisseur\ClientConvertisseurV2\bin\x86\Debug\View\DeviseToEuro.xbf">
+      <PackagePath>View\DeviseToEuro.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Etudiant\Source\Repos\Fyndir\WSConvertisseur\ClientConvertisseurV2\bin\x86\Debug\View\EuroToDevise.xbf">
+      <PackagePath>View\EuroToDevise.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Etudiant\Source\Repos\Fyndir\WSConvertisseur\ClientConvertisseurV2\bin\x86\Debug\View\RootPage.xbf">
+      <PackagePath>View\RootPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
