@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ClientConvertisseurV1.Model;
+using ClientConvertisseurV1.Service;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,9 +24,14 @@ namespace ClientConvertisseurV1
     /// </summary>
     public sealed partial class MainPage : Page
     {
+
         public MainPage()
         {
             this.InitializeComponent();
+            WSService ws = new WSService();            
+            this.CbDevise.DataContext = ws.GetAllDevice();
+            this.CbDevise.SelectedValuePath = "Id";
+            this.CbDevise.DisplayMemberPath = "Nom";
         }
     }
 }

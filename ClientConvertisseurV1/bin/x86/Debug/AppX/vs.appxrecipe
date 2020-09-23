@@ -30,13 +30,25 @@
     <AppXManifest Include="C:\Users\Etudiant\Source\Repos\Fyndir\WSConvertisseur\ClientConvertisseurV1\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-09-23T09:31:27.537</Modified>
+      <Modified>2020-09-23T10:14:52.900</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Etudiant\Source\Repos\Fyndir\WSConvertisseur\ClientConvertisseurV1\bin\x86\Debug\ClientConvertisseurV1.exe">
       <PackagePath>entrypoint\ClientConvertisseurV1.exe</PackagePath>
-      <Modified>2020-09-23T09:31:27.116</Modified>
+      <Modified>2020-09-23T10:14:52.475</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Etudiant\.nuget\packages\microsoft.aspnet.webapi.client\5.2.7\lib\netstandard2.0\System.Net.Http.Formatting.dll">
+      <PackagePath>System.Net.Http.Formatting.dll</PackagePath>
+      <Modified>2018-11-28T12:00:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Etudiant\.nuget\packages\newtonsoft.json\10.0.1\lib\netstandard1.3\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2017-03-20T19:03:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Etudiant\.nuget\packages\newtonsoft.json.bson\1.0.1\lib\netstandard1.3\Newtonsoft.Json.Bson.dll">
+      <PackagePath>Newtonsoft.Json.Bson.dll</PackagePath>
+      <Modified>2017-03-22T10:01:20.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -86,15 +98,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Etudiant\Source\Repos\Fyndir\WSConvertisseur\ClientConvertisseurV1\bin\x86\Debug\ClientConvertisseurV1.xr.xml">
       <PackagePath>ClientConvertisseurV1.xr.xml</PackagePath>
-      <Modified>2020-09-23T09:31:26.978</Modified>
+      <Modified>2020-09-23T10:14:52.343</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Etudiant\Source\Repos\Fyndir\WSConvertisseur\ClientConvertisseurV1\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-09-23T09:23:33.300</Modified>
+      <Modified>2020-09-23T10:14:52.347</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Etudiant\Source\Repos\Fyndir\WSConvertisseur\ClientConvertisseurV1\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-09-23T09:31:26.983</Modified>
+      <Modified>2020-09-23T10:14:52.347</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -102,11 +114,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Etudiant\Source\Repos\Fyndir\WSConvertisseur\ClientConvertisseurV1\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-09-23T09:03:53.364</Modified>
+      <Modified>2020-09-23T10:06:39.391</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Etudiant\Source\Repos\Fyndir\WSConvertisseur\ClientConvertisseurV1\bin\x86\Debug\Core\ClientConvertisseurV1.exe">
       <PackagePath>ClientConvertisseurV1.exe</PackagePath>
-      <Modified>2020-09-23T09:31:27.531</Modified>
+      <Modified>2020-09-23T10:14:52.894</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
