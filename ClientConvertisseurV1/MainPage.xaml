@@ -8,7 +8,20 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <RelativePanel>
 
-    </Grid>
+        <TextBlock Text="Convertiseur"  Name="TxtB1" FontSize="24" FontWeight="Bold" Margin="50" ></TextBlock>
+        <TextBlock Text="Montant en Euro" RelativePanel.Below="TxtB1" RelativePanel.AlignHorizontalCenterWithPanel="True" Name="TxtB2" Margin="10"></TextBlock>
+        <TextBox x:Name="TbMontantInit" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="TxtB2" Width="240"/>
+
+        <TextBlock Text="devise" x:Name="TxtB3" RelativePanel.Below="TbMontantInit" RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="10"></TextBlock>
+        <ComboBox x:Name="CbDevise" RelativePanel.Below="TxtB3" RelativePanel.AlignHorizontalCenterWithPanel="True" Width="240"/>
+
+        <Button x:Name="BtConverssion" Content="Convertir" RelativePanel.Below="CbDevise" RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="10" Width="240"></Button>
+
+        <TextBlock Text="Montant en devise" x:Name="TxtB4"  RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="BtConverssion" Margin="10"></TextBlock>
+
+        <TextBox IsEnabled="False" x:Name="TbMontantEnDevise" RelativePanel.Below="TxtB4" RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="10" Width="240"></TextBox>
+
+    </RelativePanel>
 </Page>
