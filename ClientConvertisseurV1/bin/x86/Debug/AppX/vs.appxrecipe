@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Etudiant\Source\Repos\Fyndir\WSConvertisseur\ClientConvertisseurV1\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-09-23T11:53:56.969</Modified>
+      <Modified>2020-09-23T12:03:24.049</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Etudiant\Source\Repos\Fyndir\WSConvertisseur\ClientConvertisseurV1\bin\x86\Debug\ClientConvertisseurV1.exe">
       <PackagePath>entrypoint\ClientConvertisseurV1.exe</PackagePath>
-      <Modified>2020-09-23T11:53:56.057</Modified>
+      <Modified>2020-09-23T12:03:23.101</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Etudiant\.nuget\packages\microsoft.aspnet.webapi.client\5.2.7\lib\netstandard2.0\System.Net.Http.Formatting.dll">
       <PackagePath>System.Net.Http.Formatting.dll</PackagePath>
@@ -102,11 +102,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Etudiant\Source\Repos\Fyndir\WSConvertisseur\ClientConvertisseurV1\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-09-23T11:53:55.562</Modified>
+      <Modified>2020-09-23T12:03:22.955</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Etudiant\Source\Repos\Fyndir\WSConvertisseur\ClientConvertisseurV1\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-09-23T11:53:55.562</Modified>
+      <Modified>2020-09-23T12:03:22.955</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -118,7 +118,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Etudiant\Source\Repos\Fyndir\WSConvertisseur\ClientConvertisseurV1\bin\x86\Debug\Core\ClientConvertisseurV1.exe">
       <PackagePath>ClientConvertisseurV1.exe</PackagePath>
-      <Modified>2020-09-23T11:53:56.963</Modified>
+      <Modified>2020-09-23T12:03:24.042</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

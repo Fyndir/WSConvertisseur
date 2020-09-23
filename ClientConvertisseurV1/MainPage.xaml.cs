@@ -7,6 +7,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -41,10 +42,19 @@ namespace ClientConvertisseurV1
             this.CbDevise.DisplayMemberPath = "Nom";
         }
 
-        private void BtConverssion_Click(object sender, RoutedEventArgs e)
+        private async void BtConverssion_Click(object sender, RoutedEventArgs e)
         {
-            int montantEuro = int.Parse(this.TbMontantInit.Text);
-            this.TbMontantEnDevise.Text = (montantEuro * ((Device)this.CbDevise.SelectedItem).Taux).ToString();
+            try
+            {
+                int montantEuro = int.Parse(this.TbMontantInit.Text);
+                this.TbMontantEnDevise.Text = (montantEuro * ((Device)this.CbDevise.SelectedItem).Taux).ToString();
+
+            }
+            catch (Exception exception)
+            {
+                MessageDialog popup = new MessageDialog(exception.Message);
+                await popup.ShowAsync();
+            }
         }
     }
 }
