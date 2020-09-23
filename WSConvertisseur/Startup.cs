@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 
 namespace WSConvertisseur
 {
@@ -28,15 +29,12 @@ namespace WSConvertisseur
         {
             services.AddControllers();
 
-            services.AddControllers();
             // Configure Swagger
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "TP1  API  Documentation", Version = "v1" });
-
                 // Configure Swagger to use the xml documentation file
                 var xmlFile = Path.ChangeExtension(typeof(Startup).Assembly.Location, ".xml");
-
                 c.IncludeXmlComments(xmlFile);
             });
         }

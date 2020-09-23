@@ -5,8 +5,12 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\Users\nczj2026\source\repos\WSConvertisseur\WSConvertisseur\WSConvertisseur.xml</DocumentationFile>
+    <DocumentationFile>C:\Users\Etudiant\Source\Repos\Fyndir\WSConvertisseur\WSConvertisseur\WSConvertisseur.xml</DocumentationFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.2" />
+  </ItemGroup>
 
 
 </Project>
