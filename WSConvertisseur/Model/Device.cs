@@ -49,5 +49,15 @@ namespace WSConvertisseur.Model
             Nom = nom;
             Taux = taux;
         }
+
+        /// <summary>
+        /// Surcharge du la methode equals
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public bool Equals(Device obj)
+        {
+            return (this.Id == obj.Id) && (this.Nom == obj.Nom) && (this.Taux == obj.Taux);
+        }
     }
 }
