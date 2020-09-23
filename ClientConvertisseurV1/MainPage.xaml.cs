@@ -28,10 +28,23 @@ namespace ClientConvertisseurV1
         public MainPage()
         {
             this.InitializeComponent();
-            WSService ws = new WSService();            
-            this.CbDevise.DataContext = ws.GetAllDevice();
+            this.AlimData();
+        }
+
+        public async void AlimData()
+        {
+            WSService ws = new WSService();
+            var resu = await ws.GetAllDevice();
+            this.CbDevise.DataContext = resu;
+            this.CbDevise.ItemsSource = resu;
             this.CbDevise.SelectedValuePath = "Id";
             this.CbDevise.DisplayMemberPath = "Nom";
+        }
+
+        private void BtConverssion_Click(object sender, RoutedEventArgs e)
+        {
+            int montantEuro = int.Parse(this.TbMontantInit.Text);
+            this.TbMontantEnDevise.Text = (montantEuro * ((Device)this.CbDevise.SelectedItem).Taux).ToString();
         }
     }
 }
